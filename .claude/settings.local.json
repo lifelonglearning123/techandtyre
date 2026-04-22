@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:techandtyres.co.uk)",
+      "Bash(mkdir -p \"/c/python/Website- techandtyres/downloaded-images\")",
+      "Bash(curl -L -o \"/c/python/Website- techandtyres/downloaded-images/logo.png\" \"https://techandtyres.co.uk/wp-content/uploads/2025/08/logo.png\")",
+      "Bash(curl -L -o \"/c/python/Website- techandtyres/downloaded-images/Rating.png\" \"https://techandtyres.co.uk/wp-content/uploads/2025/08/Rating.png\")",
+      "Bash(curl -L -o \"/c/python/Website- techandtyres/downloaded-images/Google.png\" \"https://techandtyres.co.uk/wp-content/uploads/2025/08/Google.png\")",
+      "Bash(curl -L -o \"/c/python/Website- techandtyres/downloaded-images/RAC.png\" \"https://techandtyres.co.uk/wp-content/uploads/2025/08/RAC.png\")",
+      "Bash(curl -s \"https://techandtyres.co.uk/\")",
+      "Bash(curl -s \"https://techandtyres.co.uk/wp-content/uploads/elementor/css/post-15.css?ver=1773294851\")",
+      "Bash(sed \"s/url\\(['\\\\\"]//g\")",
+      "Bash(sed \"s/['\\\\\"]\\)//g\")",
+      "Bash(curl -s \"https://techandtyres.co.uk/wp-content/uploads/elementor/css/post-6.css?ver=1773268613\")",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(curl -s https://techandtyres.co.uk/wp-content/uploads/elementor/css/__TRACKED_VAR__)",
+      "Bash(curl -s \"https://techandtyres.co.uk/wp-json/wp/v2/media?per_page=50\")",
+      "Bash(sed 's/\"source_url\":\"//g')",
+      "Bash(sed 's/\"//g')",
+      "Bash(sed 's/\"$//g')",
+      "Bash(sort -k5 -hr)",
+      "Read(//c/Users/Chao Liu/.claude/**)",
+      "Read(//c/Users/Chao Liu/.claude/plugins/**)",
+      "Bash(xargs -I{} cat ~/.claude/plugins/marketplaces/claude-plugins-official/plugins/{}/.claude-plugin/plugin.json)",
+      "Bash(awk '{print $NF, $5}')",
+      "Bash(sed -i 's|Melksham, Wiltshire <!-- \\\\[REPLACE: Full street address, Melksham, Wiltshire, SN?? ???\\\\] -->|Bradford Rd, Melksham, Wiltshire, SN12 8LQ|g' *.html)",
+      "Bash(sed -i 's|Melksham, Wiltshire<br><em style=\"color: var\\(--text-faint\\); font-size: 0.85rem;\">\\\\[Full address — add postcode\\\\]</em>|Bradford Rd, Melksham<br>Wiltshire, SN12 8LQ|g' contact.html)",
+      "Bash(sed -i 's|<span>Melksham, Wiltshire</span>|<span>Bradford Rd, Melksham<br>Wiltshire SN12 8LQ</span>|g' *.html)",
+      "Bash(sed -i 's|\"addressLocality\": \"Melksham\",\\\\n      \"addressRegion\": \"Wiltshire\",|\"streetAddress\": \"Bradford Rd\",\\\\n      \"addressLocality\": \"Melksham\",\\\\n      \"postalCode\": \"SN12 8LQ\",\\\\n      \"addressRegion\": \"Wiltshire\",|g' index.html)",
+      "Bash(cp \"whatsapp images/1776799221_AC1081298EF3C02D1B33E601A411C2C7.jpg\" \"downloaded-images/van-night.jpg\")",
+      "Bash(cp \"whatsapp images/1776799540_AC35C5685E14828795F379C7A3C8495B.jpg\" \"downloaded-images/mobile-home-bmw.jpg\")",
+      "Bash(cp \"whatsapp images/1776799589_AC59E06A0573A32481AE906639AD5D65.jpg\" \"downloaded-images/mobile-home-audi.jpg\")",
+      "Bash(cp \"whatsapp images/1776799221_AC422EB1362B5CEC94B693A7E5D910C2.jpg\" \"downloaded-images/mobile-driveway-golf.jpg\")",
+      "Bash(cp \"whatsapp images/1776799222_AC01C7EF2FCB553E69FA2C33455D029C.jpg\" \"downloaded-images/mobile-carpark-seat.jpg\")",
+      "Bash(sed -i 's/4\\\\.9-star rated/5\\\\.0-star rated/g' about.html)",
+      "Bash(sed -i 's/4\\\\.9 Star Rating/5\\\\.0 Star Rating/g' about.html)",
+      "Bash(sed -i 's/4\\\\.9 Star Rating/5\\\\.0 Star Rating/g' testimonials.html)",
+      "Bash(sed -i 's/4\\\\.9 Star Rating/5\\\\.0 Star Rating/g' mobile-tyre-fitting-melksham.html)",
+      "Bash(sed -i 's/4\\\\.9 star rating/5\\\\.0 star rating/g' index.html)"
+    ]
+  }
+}
